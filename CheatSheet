@@ -1,0 +1,50 @@
+GIT Cheat Sheet
+Category	Command	Description	Example
+Setup	git config --global user.name	Set username	git config --global user.name "John"
+	git config --global user.email	Set email	git config --global user.email "john@mail.com"
+	git config --list	View configuration	git config --list
+Repository	git init	Initialize new repository	git init
+	git clone	Clone existing repository	git clone https://github.com/user/repo.git
+Status & Tracking	git status	Show changed files	git status
+	git add file	Add file to staging	git add app.py
+	git add .	Add all files	git add .
+Commit	git commit -m	Commit staged changes	git commit -m "feat: add login"
+Branching	git branch	List branches	git branch
+	git branch <name>	Create branch	git branch feature-api
+	git checkout <branch>	Switch branch	git checkout feature-api
+	git checkout -b <branch>	Create and switch branch	git checkout -b feature-login
+	git switch <branch>	Modern way to switch branch	git switch main
+Merge	git merge <branch>	Merge branch into current	git merge feature-login
+Remote Repository	git remote add origin	Add remote repo	git remote add origin repo_url
+	git remote -v	Show remote repos	git remote -v
+Push & Pull	git push	Push commits to remote	git push origin main
+	git push -u origin	Push and track branch	git push -u origin feature1
+	git pull	Pull latest changes	git pull origin main
+	git fetch	Download changes only	git fetch
+History	git log	Show commit history	git log
+	git log --oneline	Short commit history	git log --oneline
+	git log --graph	Visual commit graph	git log --graph --oneline
+Compare Changes	git diff	Show file differences	git diff
+	git show	Show commit details	git show commit_id
+	git blame	Show line author	git blame file.py
+Undo Changes	git reset file	Unstage file	git reset app.py
+	git reset --soft HEAD~1	Undo last commit (keep changes)	git reset --soft HEAD~1
+	git reset --hard HEAD~1	Remove last commit completely	git reset --hard HEAD~1
+Discard Changes	git checkout -- file	Discard file changes	git checkout -- app.py
+	git reset --hard	Remove all local changes	git reset --hard
+Stash	git stash	Save changes temporarily	git stash
+	git stash pop	Restore stashed changes	git stash pop
+	git stash list	Show stashes	git stash list
+Tagging	git tag	Create tag	git tag v1.0
+	git push origin tag	Push tag	git push origin v1.0
+
+
+ Most Used Daily Commands (Quick List)
+Command	Purpose
+git status	Check working directory
+git add .	Stage changes
+git commit -m "message"	Save changes
+git pull	Get latest code
+git push	Upload changes
+git branch	See branches
+git checkout -b branch	Create new branch
