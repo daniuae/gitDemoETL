@@ -1,4 +1,4 @@
-GIT Cheat Sheet
+--GIT Cheat Sheet
 Category	Command	Description	Example
 Setup	git config --global user.name	Set username	git config --global user.name "John"
 	git config --global user.email	Set email	git config --global user.email "john@mail.com"
